@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="">
 	<head>
@@ -25,12 +26,13 @@
 		
     	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 center-block">
 		
-		       <form action="" method="POST" role="form">
-		       	<legend>Takes MSISDN as an input</legend>
+		       <form action="return.php" id="msisdn_form" method="POST" role="form">
+		       	<legend>
+		       	Takes MSISDN as an input 	</legend>
 		       
 		       	<div class="form-group">
 		       		<label for="">MSISDN</label>
-		       		<input type="text" class="form-control" id="msisdn_no" placeholder="Input field">
+		       		<input type="text" class="form-control" id="msisdn" name="msisdn_no" placeholder="insert number" maxlength="14" required>
 		       	</div>
 		       
 		       	
@@ -49,3 +51,18 @@
  		<script src="Hello World"></script>
 	</body>
 </html>
+
+<script>
+//client validation , checking is input valid msisdn number
+    jQuery(document).ready(function () {
+        jQuery('#msisdn_form').submit(function (e) {
+            var number = jQuery("#msisdn").val();
+            if (!number.match(/^[+]\s?\d+$/)) {
+                alert('Please enter valid MSISDN number (+38163123456)');
+                jQuery('#msisdn').focus();
+                e.preventDefault();
+            }
+        });
+    });
+	
+</script>
