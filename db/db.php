@@ -1,7 +1,10 @@
 <?php
 
 /**
- * 
+ * @author Sandro basta <[<sandrobasta@outlook.com>]>
+ * Following [] is supported from PHP >= 5.4
+ * Can't work in lower version
+ * check your fersion first
  */
 
 return[
