@@ -4,7 +4,7 @@ class Msisdn
 {
 
  /**
- * @author  Sandro Basta <[<sandrobast@outlook.com>]>
+ * @author  Sandro Basta <[<sandrobasta@outlook.com>]>
  * @copyright [project is only for purpose of test, contact for more inormation]
  * |takes MSISDN INPUT
  * |returns MNO identifier, country dialling code, subscriber number and country identifier as defined with ISO 3166-1-alpha-2
